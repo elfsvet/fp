@@ -3,6 +3,12 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import mainImg from 'public/main_bg.jpg';
+import Link from 'next/link';
+import misha1 from 'public/misha1.jpeg';
+import misha2 from 'public/misha2.jpeg';
+import stepan1 from 'public/stepan1.jpeg';
+import stepan2 from 'public/stepan2.jpeg';
+import slava1 from 'public/slava1.jpeg';
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -67,22 +73,19 @@ export default function Hero() {
                     mollit id pariatur in voluptate cillum.
                   </p>
                   <div className='mt-10 flex items-center gap-x-6'>
-                    <a
-                      href='#'
-                      className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                    <Link
+                      href='https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLo+KFNkx01G4MGf7e/rA4CxyO6q1+JnYTid5PKtRxPS4SWvGGiBJpqXV2ayGZc1WqNznWWMXhQQi+HS2KqvQbK6Uk/jaie74pzkBh2TsMUjM='
+                      className='rounded-md bg-fp px-24 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
                     >
-                      Get started
-                    </a>
-                    <a href='#' className='text-sm font-semibold leading-6 text-gray-900'>
-                      Live demo <span aria-hidden='true'>→</span>
-                    </a>
+                      Book
+                    </Link>
                   </div>
                 </div>
                 <div className='mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0'>
                   <div className='ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
                     <div className='relative'>
                       <Image
-                        src={mainImg}
+                        src={misha1}
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -92,7 +95,7 @@ export default function Hero() {
                   <div className='mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36'>
                     <div className='relative'>
                       <Image
-                        src={mainImg}
+                        src={stepan1}
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -100,7 +103,7 @@ export default function Hero() {
                     </div>
                     <div className='relative'>
                       <Image
-                        src={mainImg}
+                        src={slava1}
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -110,7 +113,7 @@ export default function Hero() {
                   <div className='w-44 flex-none space-y-8 pt-32 sm:pt-0'>
                     <div className='relative'>
                       <Image
-                        src={mainImg}
+                        src={misha2}
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -118,7 +121,7 @@ export default function Hero() {
                     </div>
                     <div className='relative'>
                       <Image
-                        src={mainImg}
+                        src={stepan2}
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
