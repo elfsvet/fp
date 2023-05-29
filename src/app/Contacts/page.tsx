@@ -1,16 +1,15 @@
 'use client';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Switch } from '@headlessui/react';
 import { ChangeEvent, useState } from 'react';
-import { useReducer } from 'react';
 import { eContactActions, useContactForm } from '@/hooks/useContactForm';
 import PhoneCard from '@/components/PhoneCard';
+import { Metadata } from 'next';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function Contacts() {
   const [contactState, dispatch] = useContactForm();
 
   const handleSubmitContactForm = () => {
