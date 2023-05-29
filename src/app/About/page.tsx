@@ -1,4 +1,11 @@
+import AboutCard from '@/components/AboutCard';
 import PhoneCard from '@/components/PhoneCard';
+import mikhail from 'public/mikhail.jpg';
+import stepan from 'public/stepan.jpg';
+import slava from 'public/slava.jpg';
+import { mikhail as mikhailText } from '../../../data/mikhail';
+import { slava as slavaText } from '../../../data/slava';
+import { stepan as stepanText } from '../../../data/stepan';
 
 const About = () => {
   return (
@@ -23,6 +30,18 @@ const About = () => {
           artist-this is who we are. At Fashion Point you can be who you are.
         </p>
       </div>
+      <AboutCard image={mikhail} text={mikhailText.about} title='cosmetology' firstName='Mikhail' lastName='Shevelev' />
+
+      <AboutCard
+        image={slava}
+        text={slavaText.about}
+        title='nails'
+        firstName='Viacheslav'
+        lastName='Savidov'
+        reverse={true}
+      />
+
+      <AboutCard image={stepan} text={stepanText.about} title='hair' firstName='Stepan' lastName='Matysik' />
     </div>
   );
 };

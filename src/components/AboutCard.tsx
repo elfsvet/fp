@@ -24,7 +24,7 @@ const AboutCard = ({
       <div className={notoSansBold.className}>
         <h1 className='uppercase text-right text-[#abb8c3] text-3xl mr-4'>{title}</h1>
       </div>
-      <div className='flex sm:flex-row flex-col gap-4 m-10'>
+      <div className='flex sm:flex-row flex-col gap-4 m-10 text-gray-600'>
         {reverse ? (
           <>
             <div className=''>{text}</div>

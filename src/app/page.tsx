@@ -1,10 +1,9 @@
 'use client';
 
+import WarningAlert, { eAlertsVariant } from '@/components/Alerts/WarningAlert';
 import mikhail from 'public/mikhail.jpg';
 import stepan from 'public/stepan.jpg';
 import slava from 'public/slava.jpg';
-import Link from 'next/link';
-import WarningAlert, { eAlertsVariant } from '@/components/Alerts/WarningAlert';
 import { mikhail as mikhailText } from '../../data/mikhail';
 import { slava as slavaText } from '../../data/slava';
 import { stepan as stepanText } from '../../data/stepan';
@@ -31,6 +30,7 @@ export default function Home() {
       />
 
       <AboutCard image={stepan} text={stepanText.about} title='hair' firstName='Stepan' lastName='Matysik' />
+
     </main>
   );
 }
