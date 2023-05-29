@@ -2,10 +2,58 @@
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Switch } from '@headlessui/react';
 import { useState } from 'react';
+import { useReducer } from 'react';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
+const initialState = {
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  message: '',
+  agreed: false,
+};
+
+enum ContactActions {
+  CONTACT_FIRST_NAME = 'CONTACT_FIRST_NAME',
+  CONTACT_LAST_NAME = 'CONTACT_LAST_NAME',
+  CONTACT_EMAIL = 'CONTACT_EMAIL',
+  CONTACT_PHONE = 'CONTACT_PHONE',
+  CONTACT_MESSAGE = 'CONTACT_MESSAGE',
+  CONTACT_AGREED = 'CONTACT_AGREED',
+}
+
+interface iContactAction {
+  type: ContactActions;
+  payload?: typeof initialState;
+}
+
+export const useContactForm = (): [contactState: typeof initialState, dispatch: React.Dispatch<iContactAction>] => {
+  const [contactState, dispatch] = useReducer(reducer, initialState);
+
+  function reducer(contactState = initialState, action: iContactAction) {
+    const { type, payload } = action;
+    switch (type) {
+      case ContactActions.CONTACT_FIRST_NAME:
+        return { ...contactState, firstName: payload };
+      case ContactActions.CONTACT_LAST_NAME:
+        return { ...contactState, lastName: payload };
+      case ContactActions.CONTACT_EMAIL:
+        return { ...contactState, email: payload };
+      case ContactActions.CONTACT_PHONE:
+        return { ...contactState, phone: payload };
+      case ContactActions.CONTACT_MESSAGE:
+        return { ...contactState, message: payload };
+      case ContactActions.CONTACT_AGREED:
+        return { ...contactState, agreed: payload };
+      default:
+        throw new Error();
+    }
+  }
+  return [contactState, dispatch];
+};
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false);
