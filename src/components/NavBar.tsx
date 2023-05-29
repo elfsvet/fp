@@ -4,6 +4,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import logo from 'public/logo.png';
+import Link from 'next/link';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
@@ -17,14 +18,14 @@ export default function NavBar() {
           <div className='px-4 sm:px-6 lg:px-8'>
             <div className='flex h-16 justify-between'>
               <div className='flex items-center w-full justify-between'>
-                <div className='flex-shrink-0'>
+                <Link href={'/'} className='flex-shrink-0'>
                   <Image className='block h-24 mt-10 w-auto lg:hidden' src={logo} alt='Fashion Point' />
                   <Image className='hidden h-28 mt-10 w-auto lg:block' src={logo} alt='Fashion Point' />
-                </div>
+                </Link>
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4'>
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href='#' className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'>
+                    <a href='/About' className='rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'>
                       About
                     </a>
                     <a
@@ -34,7 +35,7 @@ export default function NavBar() {
                       Service
                     </a>
                     <a
-                      href='#'
+                      href='/Contacts'
                       className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
                     >
                       Contacts
