@@ -19,8 +19,8 @@ export default function NavBar() {
             <div className='flex h-16 justify-between'>
               <div className='flex items-center w-full justify-between'>
                 <Link href={'/'} className='flex-shrink-0'>
-                  <Image className='block h-24 mt-10 w-auto lg:hidden' src={logo} alt='Fashion Point' />
-                  <Image className='hidden h-28 mt-10 w-auto lg:block' src={logo} alt='Fashion Point' />
+                  <Image className='block h-16 w-auto sm:hidden' src={logo} alt='Fashion Point' />
+                  <Image className='hidden h-28 mt-10 w-auto sm:block' src={logo} alt='Fashion Point' />
                 </Link>
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4'>
@@ -68,7 +68,7 @@ export default function NavBar() {
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/About'
                 className='block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white'
               >
                 About
@@ -82,7 +82,7 @@ export default function NavBar() {
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/Contacts'
                 className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
               >
                 Contacts

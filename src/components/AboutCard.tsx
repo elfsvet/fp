@@ -24,15 +24,19 @@ const AboutCard = ({
       <div className={notoSansBold.className}>
         <h1 className='uppercase text-right text-[#abb8c3] text-3xl mr-4'>{title}</h1>
       </div>
-      <div className='grid sm:grid-cols-2 gap-4 my-10 mx-10'>
+      <div className='flex sm:flex-row flex-col gap-4 m-10'>
         {reverse ? (
           <>
             <div className=''>{text}</div>
-            <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
+            <div>
+              <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
+            </div>
           </>
         ) : (
           <>
-            <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
+            <div>
+              <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
+            </div>
             <div className=''>{text}</div>
           </>
         )}

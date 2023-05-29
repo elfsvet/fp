@@ -8,7 +8,7 @@ const PhoneCard = ({ light = false }: { light?: boolean }) => {
     <div className={`flex justify-center`}>
       <div
         className={`${
-          light ? '' : `bg-gray-800`
+          light ? '' : `bg-gray-800 shadow-xl`
         } mt-10 p-10 flex-col flex gap-3 uppercase rounded w-96 -rotate-12 transition-transform hover:-rotate-6 border-l-[5px] border-fp`}
       >
         <p className={`${light ? '' : `text-white`} text-sm`}>call us now</p>
