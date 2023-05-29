@@ -1,28 +1,26 @@
 'use client';
 
-import Image from 'next/image';
 import mikhail from 'public/mikhail.jpg';
 import stepan from 'public/stepan.jpg';
 import slava from 'public/slava.jpg';
 import Link from 'next/link';
 import WarningAlert, { eAlertsVariant } from '@/components/Alerts/WarningAlert';
-import NavBar from '@/components/NavBar';
-import MyNav from '@/components/MyNav';
 import { mikhail as mikhailText } from '../../data/mikhail';
 import { slava as slavaText } from '../../data/slava';
 import { stepan as stepanText } from '../../data/stepan';
 import AboutCard from '@/components/AboutCard';
 import PhoneCard from '@/components/PhoneCard';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   return (
     <main className=''>
-      {/* <MyNav /> */}
+      <Hero />
       {/* <WarningAlert alertText='We are closed for walk in, please schedule an appointment.' alertWarning='Attention' /> */}
-      {/* phone card */}
       <PhoneCard />
-      {/* phone card */}
+
       <AboutCard image={mikhail} text={mikhailText.about} title='cosmetology' firstName='Mikhail' lastName='Shevelev' />
+
       <AboutCard
         image={slava}
         text={slavaText.about}
@@ -31,6 +29,7 @@ export default function Home() {
         lastName='Savidov'
         reverse={true}
       />
+
       <AboutCard image={stepan} text={stepanText.about} title='hair' firstName='Stepan' lastName='Matysik' />
 
       <Link
