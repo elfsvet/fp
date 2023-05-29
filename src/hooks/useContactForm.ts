@@ -33,6 +33,7 @@ export interface iContactState {
 }
 
 export const useContactForm = (): [contactState: iContactState, dispatch: React.Dispatch<iContactAction>] => {
+  //@ts-ignore
   const [contactState, dispatch] = useReducer(reducer, initialContactFormState);
 
   function reducer(contactState: typeof initialContactFormState, action: iContactAction) {
