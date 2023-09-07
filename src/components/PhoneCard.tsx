@@ -17,7 +17,7 @@ const PhoneCard = ({ light = false }: { light?: boolean }) => {
         </Link>
         <p className={`${light ? '' : `text-white`}`}>1920 e hallandale beach blvd ph6 hallandale beach 33009 fl</p>
         <div className={`${light ? '' : `text-white`} flex justify-around`}>
-          <Link href={'https://www.facebook.com/FashionPointMiami/'} target='_blank'>
+          <Link href={'https://www.facebook.com/fashionpointllc/'} target='_blank'>
             <FaFacebook className='w-12 h-12' />
           </Link>
           <Link href={'https://www.instagram.com/fashionpointmiami/'} target='_blank'>
