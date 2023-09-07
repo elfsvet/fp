@@ -68,9 +68,7 @@ export default function Hero() {
                     We turn beauty into art
                   </h1>
                   <p className='relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                    labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                    mollit id pariatur in voluptate cillum.
+                  We are a team of world-class beauty experts dedicated to creating the most beautiful and transformative experiences for our clients. With over 25 years of combined experience, we have the knowledge and skills to help you look and feel your best.
                   </p>
                   <div className='mt-10 flex items-center gap-x-6'>
                     <Link
