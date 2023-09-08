@@ -1,25 +1,13 @@
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import mainImg from 'public/main_bg.jpg';
 import Link from 'next/link';
 import misha1 from 'public/misha1.jpeg';
 import misha2 from 'public/misha2.jpeg';
 import stepan1 from 'public/stepan1.jpeg';
 import stepan2 from 'public/stepan2.jpeg';
 import slava1 from 'public/slava1.jpeg';
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-];
+import { linkToBookFp } from '@/data/links';
 
 export default function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className='bg-white'>
       <main>
@@ -67,13 +55,15 @@ export default function Hero() {
                   <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
                     We turn beauty into art
                   </h1>
-                  <p className='relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
-                  We are a team of world-class beauty experts dedicated to creating the most beautiful and transformative experiences for our clients. With over 25 years of combined experience, we have the knowledge and skills to help you look and feel your best.
+                  <p className='relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
+                    We are a team of world-class beauty experts dedicated to creating the most beautiful and
+                    transformative experiences for our clients. With over 25 years of combined experience, we have the
+                    knowledge and skills to help you look and feel your best.
                   </p>
                   <div className='mt-10 flex items-center gap-x-6'>
                     <Link
-                      href='https://www.vagaro.com/Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLo+KFNkx01G4MGf7e/rA4CxyO6q1+JnYTid5PKtRxPS4SWvGGiBJpqXV2ayGZc1WqNznWWMXhQQi+HS2KqvQbK6Uk/jaie74pzkBh2TsMUjM='
-                      className='rounded-md bg-fp px-24 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
+                      href={linkToBookFp}
+                      className='animate-pulse rounded-md bg-fp px-24 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
                     >
                       Book
                     </Link>

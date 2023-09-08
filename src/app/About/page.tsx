@@ -1,5 +1,5 @@
-import AboutCard from '@/components/AboutCard';
-import PhoneCard from '@/components/PhoneCard';
+import AboutCard from '@/src/components/AboutCard';
+import PhoneCard from '@/src/components/PhoneCard';
 import mikhail from 'public/mikhail.jpg';
 import stepan from 'public/stepan.jpg';
 import slava from 'public/slava.jpg';
@@ -30,18 +30,42 @@ const About = () => {
           artist-this is who we are. At Fashion Point you can be who you are.
         </p>
       </div>
-      <AboutCard image={mikhail} text={mikhailText.about} title='cosmetology' firstName='Mikhail' lastName='Shevelev' />
+      <AboutCard
+        image={mikhail}
+        about={mikhailText.newAbout}
+        philosophy={mikhailText.philosophy}
+        expertise={mikhailText.expertise}
+        follow={mikhailText.follow}
+        book={mikhailText.book}
+        title='cosmetology'
+        firstName='Mikhail'
+        lastName='Shevelev'
+      />
 
       <AboutCard
         image={slava}
-        text={slavaText.about}
+        about={slavaText.newAbout}
+        philosophy={slavaText.philosophy}
+        expertise={slavaText.expertise}
+        follow={slavaText.follow}
+        book={slavaText.book}
         title='nails'
         firstName='Viacheslav'
         lastName='Savidov'
         reverse={true}
       />
 
-      <AboutCard image={stepan} text={stepanText.about} title='hair' firstName='Stepan' lastName='Matysik' />
+      <AboutCard
+        image={stepan}
+        about={stepanText.newAbout}
+        philosophy={stepanText.philosophy}
+        expertise={stepanText.expertise}
+        follow={stepanText.follow}
+        book={stepanText.book}
+        title='hair'
+        firstName='Stepan'
+        lastName='Matysik'
+      />
     </div>
   );
 };

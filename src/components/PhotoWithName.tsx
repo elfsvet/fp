@@ -8,14 +8,16 @@ const PhotoWithName = ({
   title,
   firstName,
   lastName,
+  side = 'left',
 }: {
   image: string | StaticImageData;
   title: string;
   firstName: string;
   lastName: string;
+  side?: 'right' | 'left';
 }) => {
   return (
-    <div className='flex pr-28'>
+    <div className={`flex ${side === 'left' ? `pr-28` : `pl-28`}`}>
       <Image src={image} alt='' className='rounded-xl shadow-xl min-w-[300px] min-h-[450px] object-contain' />
       <div className='-ml-10 uppercase'>
         <h1>{title}</h1>

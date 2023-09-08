@@ -1,5 +1,4 @@
-import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { facebookLink, instagramLink } from '@/data/links';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
@@ -17,10 +16,10 @@ const PhoneCard = ({ light = false }: { light?: boolean }) => {
         </Link>
         <p className={`${light ? '' : `text-white`}`}>1920 e hallandale beach blvd ph6 hallandale beach 33009 fl</p>
         <div className={`${light ? '' : `text-white`} flex justify-around`}>
-          <Link href={'https://www.facebook.com/fashionpointmia/'} target='_blank'>
+          <Link href={facebookLink} target='_blank'>
             <FaFacebook className='w-12 h-12' />
           </Link>
-          <Link href={'https://www.instagram.com/fashionpointmiami/'} target='_blank'>
+          <Link href={instagramLink} target='_blank'>
             <FaInstagram className='w-12 h-12' />
           </Link>
         </div>

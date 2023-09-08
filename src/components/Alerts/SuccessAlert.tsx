@@ -1,9 +1,6 @@
 'use client';
 
 import {
-  ExclamationTriangleIcon,
-  XCircleIcon,
-  InformationCircleIcon,
   CheckCircleIcon,
 } from '@heroicons/react/20/solid';
 

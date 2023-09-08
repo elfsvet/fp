@@ -1,15 +1,15 @@
 'use client';
 
-import WarningAlert, { eAlertsVariant } from '@/components/Alerts/WarningAlert';
+import WarningAlert, { eAlertsVariant } from '@/src/components/Alerts/WarningAlert';
 import mikhail from 'public/mikhail.jpg';
 import stepan from 'public/stepan.jpg';
 import slava from 'public/slava.jpg';
 import { mikhail as mikhailText } from '../../data/mikhail';
 import { slava as slavaText } from '../../data/slava';
 import { stepan as stepanText } from '../../data/stepan';
-import AboutCard from '@/components/AboutCard';
-import PhoneCard from '@/components/PhoneCard';
-import Hero from '@/components/Hero';
+import AboutCard from '@/src/components/AboutCard';
+import PhoneCard from '@/src/components/PhoneCard';
+import Hero from '@/src/components/Hero';
 
 export default function Home() {
   return (
@@ -18,19 +18,42 @@ export default function Home() {
       {/* <WarningAlert alertText='We are closed for walk in, please schedule an appointment.' alertWarning='Attention' /> */}
       <PhoneCard />
 
-      <AboutCard image={mikhail} text={mikhailText.about} title='cosmetology' firstName='Mikhail' lastName='Shevelev' />
+      <AboutCard
+        image={mikhail}
+        about={mikhailText.newAbout}
+        philosophy={mikhailText.philosophy}
+        expertise={mikhailText.expertise}
+        follow={mikhailText.follow}
+        book={mikhailText.book}
+        title='cosmetology'
+        firstName='Mikhail'
+        lastName='Shevelev'
+      />
 
       <AboutCard
         image={slava}
-        text={slavaText.about}
+        about={slavaText.newAbout}
+        philosophy={slavaText.philosophy}
+        expertise={slavaText.expertise}
+        follow={slavaText.follow}
+        book={slavaText.book}
         title='nails'
         firstName='Viacheslav'
         lastName='Savidov'
         reverse={true}
       />
 
-      <AboutCard image={stepan} text={stepanText.about} title='hair' firstName='Stepan' lastName='Matysik' />
-
+      <AboutCard
+        image={stepan}
+        about={stepanText.newAbout}
+        philosophy={stepanText.philosophy}
+        expertise={stepanText.expertise}
+        follow={stepanText.follow}
+        book={stepanText.book}
+        title='hair'
+        firstName='Stepan'
+        lastName='Matysik'
+      />
     </main>
   );
 }
