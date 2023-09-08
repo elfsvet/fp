@@ -59,7 +59,7 @@ const AboutCard = ({
               <p className='border-b-2 border-gray-500 w-40' />
               <div className=''>{philosophy}</div>
 
-              <div className='flex items-end flex-col'>
+              <div className='flex items-center md:items-end  flex-col'>
                 <div className='flex gap-4'>
                   <Link href={follow} target='_blank'>
                     <FaInstagram className='w-12 h-12 text-fp' />
@@ -104,7 +104,7 @@ const AboutCard = ({
               <p className='border-b-2 border-gray-500 w-40' />
               <div className=''>{philosophy}</div>
 
-              <div className='flex items-end flex-col'>
+              <div className='flex items-center md:items-end  flex-col'>
                 <div className='flex gap-4'>
                   <Link href={follow} target='_blank'>
                     <FaInstagram className='w-12 h-12 text-fp' />
