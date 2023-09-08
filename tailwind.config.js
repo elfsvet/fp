@@ -15,6 +15,9 @@ module.exports = {
       colors: {
         fp: '#1892b2',
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

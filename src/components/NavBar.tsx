@@ -4,6 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import logo from 'public/logo.png';
 import Link from 'next/link';
+import { linkServicesFp, linkToBookFp } from '@/data/links';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
@@ -31,7 +32,7 @@ export default function NavBar() {
                       About
                     </Link>
                     <Link
-                      href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLwlMNM6/4NG8lPhYht8u9byWhSUZrvpf3NzGO1qmK7+mutdIItdAA9IrlWnM8S4KBHq16xFVfqAHQJwQt7IbM66exEhopoe8Y+19DRvKSPh8='
+                      href={linkServicesFp}
                       className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
                     >
                       Service
@@ -43,7 +44,7 @@ export default function NavBar() {
                       Contacts
                     </Link>
                     <Link
-                      href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLo+KFNkx01G4MGf7e/rA4CxyO6q1+JnYTid5PKtRxPS4SWvGGiBJpqXV2ayGZc1WqNznWWMXhQQi+HS2KqvQbK6Uk/jaie74pzkBh2TsMUjM='
+                      href={linkToBookFp}
                       className='rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
                     >
                       Book
@@ -77,7 +78,7 @@ export default function NavBar() {
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLwlMNM6/4NG8lPhYht8u9byWhSUZrvpf3NzGO1qmK7+mutdIItdAA9IrlWnM8S4KBHq16xFVfqAHQJwQt7IbM66exEhopoe8Y+19DRvKSPh8='
+                href={linkServicesFp}
                 className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
               >
                 Service
@@ -91,7 +92,7 @@ export default function NavBar() {
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='https://www.vagaro.com//Users/BusinessWidget.aspx?enc=MMLjhIwJMcwFQhXLL7ifVOSZDEHgoh9is/znhp5gyXoERx3VS8vxhyCOuG9h1PDbeqjru07iFVN7KOlotgpRlmIdjcg5O7QK9k1pTlHaOJfwKdk4JQGUJsyV/pO6+eSElvdt1vEXFJJ8FeXYcqAdhZBqd/ATMeMiT2wdGxpsUChyMS2q3lCVT2KNxd1NLpRiXHJFAoFL2BldUvFkptMWejCKW7UIK+XEHBkB5r0l85pyJa75vcPD68pEQ9VqHVx6vhYWfxNha8L+Tsg4Ne62nD6LMx1aSb/9dVHiXT80taRsBkUEY1anrF2cFuk+SgOLo+KFNkx01G4MGf7e/rA4CxyO6q1+JnYTid5PKtRxPS4SWvGGiBJpqXV2ayGZc1WqNznWWMXhQQi+HS2KqvQbK6Uk/jaie74pzkBh2TsMUjM='
+                href={linkToBookFp}
                 className='block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white'
               >
                 Book
