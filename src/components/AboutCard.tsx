@@ -38,7 +38,7 @@ const AboutCard = ({
         {reverse ? (
           <>
             <div className='md:hidden'>
-              <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} side='right' />
+              <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
             </div>
             <div className='flex flex-col gap-4'>
               <div className=''>{about}</div>

@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const PhoneCard = ({ light = false }: { light?: boolean }) => {
   return (
-    <div className={`flex justify-center pb-12`}>
+    <div className={`flex justify-center pb-12 overflow-hidden `}>
       <div
         className={`${
           light ? '' : `bg-gray-800 shadow-xl`
