@@ -17,10 +17,10 @@ const PhotoWithName = ({
   side?: 'right' | 'left';
 }) => {
   return (
-    <div className={`flex ${side === 'left' ? `pr-28` : `pl-28`}`}>
+    <div className={`flex relative ${side === 'left' ? `pr-28` : `pl-28`}`}>
       <Image src={image} alt='' className='rounded-xl shadow-xl min-w-[300px] min-h-[450px] object-contain' />
-      <div className='-ml-10 uppercase'>
-        <h1>{title}</h1>
+      <div className=' md:block md:-ml-10 absolute md:static -top-6 -left-8 uppercase overflow-hidden'>
+        {/* <h1>{title}</h1> */}
         <div className={`${notoSansBold.className} text-2xl`}>
           <h1 className='text-fp font-extrabold'>{firstName}</h1>
           <h1>{lastName}</h1>
