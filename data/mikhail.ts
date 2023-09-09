@@ -14,7 +14,7 @@ export const mikhail = {
     Completed numerous internships in France, including a 2-year stint as leading brand manager for Dermalogica in Russia
     Has experience from one of the best salons in Côte d'Azur of France – Meder Beauty Antibes`,
 
-  expertise: ['Skin care', 'Exfoliation', 'Deep cleansing', 'Relaxant massage', 'Makeup application', 'Hair styling'],
+  expertise: ['Skin care', 'Exfoliation', 'Deep cleansing', 'Relaxant massage', 'Hydrafacial', 'Rosacea treatment', "Acne treatment", "Wrinkles treatment", "Age well strategy"],
 
   philosophy: `I believe that beauty is an expression of who we are, and that everyone deserves to feel beautiful. I am committed to providing my clients with the highest quality skin care and beauty services, and to helping them achieve their individual beauty goals.`,
 
