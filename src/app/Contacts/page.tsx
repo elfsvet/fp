@@ -1,9 +1,11 @@
 'use client';
+
 import { Switch } from '@headlessui/react';
 import { ChangeEvent, useState } from 'react';
 import { eContactActions, useContactForm } from '@/src/hooks/useContactForm';
 import PhoneCard from '@/src/components/PhoneCard';
 import { Metadata } from 'next';
+import ScrollUpButton from '@/src/components/Buttons/ScrollUpButton';
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
@@ -163,6 +165,7 @@ export default function Contacts() {
           </button>
         </div>
       </form> */}
+      <ScrollUpButton />
     </div>
   );
 }
