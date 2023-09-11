@@ -10,6 +10,14 @@ import { stepan as stepanText } from '../../data/stepan';
 import AboutCard from '@/src/components/AboutCard';
 import PhoneCard from '@/src/components/PhoneCard';
 import Hero from '@/src/components/Hero';
+import { FaArrowUp } from 'react-icons/fa';
+
+const isBrowser = () => typeof window !== 'undefined';
+
+function scrollToTop() {
+  if (!isBrowser()) return;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 export default function Home() {
   return (
@@ -54,6 +62,12 @@ export default function Home() {
         firstName='Stepan'
         lastName='Matysik'
       />
+      <button
+        className='fixed bottom-0 left-0 rounded-full m-2  p-2.5 bg-fp/50 hover:bg-fp/40 focus-visible:outline focus-visible:outline-2 text-white focus-visible:outline-offset-2 focus-visible:outline-fp'
+        onClick={scrollToTop}
+      >
+        <FaArrowUp />
+      </button>
     </main>
   );
 }
