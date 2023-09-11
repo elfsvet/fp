@@ -10,6 +10,7 @@ import { stepan as stepanText } from '../../data/stepan';
 import AboutCard from '@/src/components/AboutCard';
 import PhoneCard from '@/src/components/PhoneCard';
 import Hero from '@/src/components/Hero';
+import ScrollUpButton from '../components/Buttons/ScrollUpButton';
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
         firstName='Stepan'
         lastName='Matysik'
       />
+      <ScrollUpButton />
     </main>
   );
 }

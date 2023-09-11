@@ -1,3 +1,5 @@
+'use client';
+
 import AboutCard from '@/src/components/AboutCard';
 import PhoneCard from '@/src/components/PhoneCard';
 import mikhail from 'public/mikhail.jpg';
@@ -6,6 +8,7 @@ import slava from 'public/slava.jpg';
 import { mikhail as mikhailText } from '../../../data/mikhail';
 import { slava as slavaText } from '../../../data/slava';
 import { stepan as stepanText } from '../../../data/stepan';
+import ScrollUpButton from '@/src/components/Buttons/ScrollUpButton';
 
 const About = () => {
   return (
@@ -66,6 +69,7 @@ const About = () => {
         firstName='Stepan'
         lastName='Matysik'
       />
+      <ScrollUpButton />
     </div>
   );
 };
