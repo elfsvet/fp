@@ -17,7 +17,7 @@ const PhotoWithName = ({
   side?: 'right' | 'left';
 }) => {
   return (
-    <div className={`flex relative ${side === 'left' ? `pr-28` : `pl-28`}`}>
+    <div className={`flex relative`}>
       <Image src={image} alt='' className='rounded-xl shadow-xl min-w-[300px] min-h-[450px] object-contain' />
       <div className=' md:block md:-ml-10 absolute md:static -top-6 -left-8 uppercase overflow-hidden'>
         {/* <h1>{title}</h1> */}
