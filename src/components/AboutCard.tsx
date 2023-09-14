@@ -76,13 +76,13 @@ const AboutCard = ({
               </div>
             </div>
 
-            <div className='md:block hidden'>
+            <div className='md:block hidden pl-2'>
               <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} side='right' />
             </div>
           </>
         ) : (
           <>
-            <div>
+            <div className='pr-2'>
               <PhotoWithName image={image} title={title} firstName={firstName} lastName={lastName} />
             </div>
             <div className='flex flex-col gap-4'>
