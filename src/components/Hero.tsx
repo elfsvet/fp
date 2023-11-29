@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { linkToBookFp } from '@/data/links';
 import misha1 from 'public/misha1.jpeg';
 import misha2 from 'public/misha2.jpeg';
+import slava1 from 'public/slava1.jpeg';
 import stepan1 from 'public/stepan1.jpeg';
 import stepan2 from 'public/stepan2.jpeg';
-import slava1 from 'public/slava1.jpeg';
-import { linkToBookFp } from '@/data/links';
 
 export default function Hero() {
   return (
@@ -57,7 +57,7 @@ export default function Hero() {
                   </h1>
                   <p className='relative mt-6 text-2xl leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
                     We are a team of world-class beauty experts dedicated to creating the most beautiful and
-                    transformative experiences for our clients. With over 25 years of combined experience, we have the
+                    transformative experiences for our clients. With over 50 years of combined experience, we have the
                     knowledge and skills to help you look and feel your best.
                   </p>
                   <div className='mt-10 flex items-center gap-x-6'>
