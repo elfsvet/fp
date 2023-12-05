@@ -1,8 +1,8 @@
-import Image, { StaticImageData } from 'next/image';
+import { FaInstagram } from 'react-icons/fa';
+import Link from 'next/link';
 import { Noto_Sans } from 'next/font/google';
 import PhotoWithName from './PhotoWithName';
-import Link from 'next/link';
-import { FaInstagram } from 'react-icons/fa';
+import { StaticImageData } from 'next/image';
 
 const notoSansBold = Noto_Sans({ weight: '900', subsets: ['latin'] });
 
@@ -23,7 +23,7 @@ const AboutCard = ({
   about: string;
   expertise: string[];
   philosophy: string;
-  book: string;
+  book?: string;
   follow: string;
   firstName: string;
   lastName: string;
@@ -65,12 +65,14 @@ const AboutCard = ({
                     <FaInstagram className='w-12 h-12 text-fp' />
                   </Link>
                   <div className='flex items-center gap-x-6'>
-                    <Link
-                      href={book}
-                      className='rounded-md bg-fp px-24 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
-                    >
-                      Book
-                    </Link>
+                    {book && (
+                      <Link
+                        href={book}
+                        className='rounded-md bg-fp px-24 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
+                      >
+                        Book
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -110,12 +112,14 @@ const AboutCard = ({
                     <FaInstagram className='w-12 h-12 text-fp' />
                   </Link>
                   <div className='flex items-center gap-x-6'>
-                    <Link
-                      href={book}
-                      className='rounded-md bg-fp px-24 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
-                    >
-                      Book
-                    </Link>
+                    {book && (
+                      <Link
+                        href={book}
+                        className='rounded-md bg-fp px-24 py-2.5 text-xl font-semibold text-white shadow-sm hover:bg-fp/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fp'
+                      >
+                        Book
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

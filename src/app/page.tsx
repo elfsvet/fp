@@ -1,16 +1,17 @@
 'use client';
 
 import WarningAlert, { eAlertsVariant } from '@/src/components/Alerts/WarningAlert';
-import mikhail from 'public/mikhail.jpg';
-import stepan from 'public/stepan.jpg';
-import slava from 'public/slava.jpg';
-import { mikhail as mikhailText } from '../../data/mikhail';
-import { slava as slavaText } from '../../data/slava';
-import { stepan as stepanText } from '../../data/stepan';
+
 import AboutCard from '@/src/components/AboutCard';
-import PhoneCard from '@/src/components/PhoneCard';
 import Hero from '@/src/components/Hero';
+import PhoneCard from '@/src/components/PhoneCard';
 import ScrollUpButton from '../components/Buttons/ScrollUpButton';
+import mikhail from 'public/mikhail.jpg';
+import { mikhail as mikhailText } from '../../data/mikhail';
+import slava from 'public/slava.jpg';
+import { slava as slavaText } from '../../data/slava';
+import stepan from 'public/stepan.jpg';
+import { stepan as stepanText } from '../../data/stepan';
 
 export default function Home() {
   return (
@@ -50,7 +51,7 @@ export default function Home() {
         philosophy={stepanText.philosophy}
         expertise={stepanText.expertise}
         follow={stepanText.follow}
-        book={stepanText.book}
+        // book={stepanText.book}
         title='hair'
         firstName='Stepan'
         lastName='Matysik'
