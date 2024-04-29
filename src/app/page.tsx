@@ -29,7 +29,7 @@ export default function Home() {
         book={mikhailText.book}
         title='cosmetology'
         firstName='Mikhail'
-        lastName='Shevelev'
+        lastName='S'
       />
 
       <AboutCard
@@ -41,7 +41,7 @@ export default function Home() {
         book={slavaText.book}
         title='nails'
         firstName='Viacheslav'
-        lastName='Savidov'
+        lastName='S'
         reverse={true}
       />
 
@@ -54,7 +54,7 @@ export default function Home() {
         // book={stepanText.book}
         title='hair'
         firstName='Stepan'
-        lastName='Matysik'
+        lastName='M'
       />
       <ScrollUpButton />
     </main>

@@ -1,5 +1,5 @@
 export const stepan = {
-  about: `Stepan Matysik is a world-class hairstylist/colorist/makeup with a phenomenal creative output who finds joy in making
+  about: `Stepan is a world-class hairstylist/colorist/makeup with a phenomenal creative output who finds joy in making
   his clients look great and feel fabulous for last 15 years, he recently joined our Fashion Point Miami team.
   He has learned an enormous amount of techniques though work with many upscale salons, including: the Italian
   spa salon Aldo Coppola, French salon Claude Sagnier and Arté Salon, NoHo. Previously he worked with big brand
