@@ -2,7 +2,7 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import logo from 'public/logo.png';
+import logo from '@/public/logo.png';
 import Link from 'next/link';
 import { linkServicesFp, linkToBookFp } from '@/data/links';
 

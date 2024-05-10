@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { linkToBookFp } from '@/data/links';
-import misha1 from 'public/misha1.jpeg';
-import misha2 from 'public/misha2.jpeg';
-import slava1 from 'public/slava1.jpeg';
-import stepan1 from 'public/stepan1.jpeg';
-import stepan2 from 'public/stepan2.jpeg';
+import misha1 from '@/public/misha1.jpeg';
+import misha2 from '@/public/misha2.jpeg';
+import slava1 from '@/public/slava1.jpeg';
+import stepan1 from '@/public/stepan1.jpeg';
+import stepan2 from '@/public/stepan2.jpeg';
 
 export default function Hero() {
   return (

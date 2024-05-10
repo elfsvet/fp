@@ -3,11 +3,11 @@
 import AboutCard from '@/src/components/AboutCard';
 import PhoneCard from '@/src/components/PhoneCard';
 import ScrollUpButton from '@/src/components/Buttons/ScrollUpButton';
-import mikhail from 'public/mikhail.jpg';
+import mikhail from '@/public/mikhail.jpg';
 import { mikhail as mikhailText } from '../../../data/mikhail';
-import slava from 'public/slava.jpg';
+import slava from '@/public/slava.jpg';
 import { slava as slavaText } from '../../../data/slava';
-import stepan from 'public/stepan.jpg';
+import stepan from '@/public/stepan.jpg';
 import { stepan as stepanText } from '../../../data/stepan';
 
 const About = () => {

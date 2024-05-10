@@ -6,11 +6,11 @@ import AboutCard from '@/src/components/AboutCard';
 import Hero from '@/src/components/Hero';
 import PhoneCard from '@/src/components/PhoneCard';
 import ScrollUpButton from '../components/Buttons/ScrollUpButton';
-import mikhail from 'public/mikhail.jpg';
+import mikhail from '@/public/mikhail.jpg';
 import { mikhail as mikhailText } from '../../data/mikhail';
-import slava from 'public/slava.jpg';
+import slava from '@/public/slava.jpg';
 import { slava as slavaText } from '../../data/slava';
-import stepan from 'public/stepan.jpg';
+import stepan from '@/public/stepan.jpg';
 import { stepan as stepanText } from '../../data/stepan';
 
 export default function Home() {
